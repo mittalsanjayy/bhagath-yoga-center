@@ -1,0 +1,26 @@
+{
+  "name": "bhagath-yoga-center",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bhagath Yoga Center website and secure Razorpay payment backend",
+  "main": "dev-server.js",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "start": "node dev-server.js",
+    "db:init": "node scripts/db-init.js",
+    "test": "node --test tests/server.test.js"
+  },
+  "dependencies": {
+    "@vercel/functions": "^3.0.0",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "pg": "^8.16.0",
+    "razorpay": "^2.9.6"
+  },
+  "devDependencies": {
+    "pg-mem": "^3.0.5"
+  }
+}

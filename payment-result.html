@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2e9">
+  <meta name="robots" content="noindex">
+  <title>Payment Status | Bhagath Yoga Center</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="payments.css">
+  <script src="payment-result.js" defer></script>
+</head>
+<body class="payment-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Bhagath Yoga Center home">
+      <span class="brand-logo-circle"><img class="brand-logo" src="assets/logo.jpeg" alt=""></span>
+      <span class="brand-copy">
+        <span class="brand-name">BHAGATH YOGA CENTER</span>
+        <span class="brand-location">KALYAN NAGAR</span>
+      </span>
+    </a>
+    <a class="text-link" href="payments.html">Plans &amp; Payments <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="payment-result" aria-labelledby="payment-result-title">
+      <p class="eyebrow" id="payment-result-eyebrow">Secure payment status</p>
+      <h1 id="payment-result-title">Checking your payment…</h1>
+      <p class="payment-result-message" id="payment-result-message" role="status" aria-live="polite">Checking the verified order status with Bhagath Yoga Center.</p>
+      <dl class="payment-result-summary">
+        <div><dt>Payment status</dt><dd id="payment-result-status">Checking</dd></div>
+        <div><dt>Membership or course</dt><dd id="payment-result-plan">—</dd></div>
+        <div><dt>Amount</dt><dd id="payment-result-amount">—</dd></div>
+        <div><dt>Payment reference</dt><dd id="payment-result-reference">—</dd></div>
+      </dl>
+      <button class="button button-dark payment-result-retry" id="payment-result-retry" type="button" hidden>Check payment status again</button>
+      <div class="payment-result-links">
+        <a class="button button-dark" href="payments.html">Return to plans</a>
+        <a class="text-link" href="index.html#contact">Contact the studio <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

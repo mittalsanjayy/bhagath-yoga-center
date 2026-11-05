@@ -1,0 +1,55 @@
+.payment-page { min-height: 100vh; }
+.payment-page .site-header { position: relative; }
+.payment-intro { width: min(100% - var(--gutter) * 2, 900px); margin: 0 auto; padding: clamp(72px, 10vw, 130px) 0 42px; }
+.payment-intro h1 { max-width: 760px; font-size: clamp(3rem, 7.5vw, 6.4rem); }
+.payment-intro > p:not(.eyebrow) { max-width: 580px; color: var(--muted); }
+.payment-config-status { min-height: 24px; margin-top: 24px; color: var(--forest); font-size: 13px; font-weight: 600; }
+.payment-config-status[data-state="error"], .payment-status-error { color: #963b31; }
+.payment-plans { display: grid; width: min(100% - var(--gutter) * 2, var(--page)); grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 0 auto; }
+.payment-plan { display: flex; min-height: 310px; flex-direction: column; align-items: flex-start; padding: clamp(22px, 3vw, 36px); border: 1px solid var(--line); background: rgba(255, 255, 255, .27); }
+.payment-plan-featured { background: var(--sage); }
+.payment-plan-course { background: var(--forest); color: var(--paper); }
+.payment-plan .option-number { color: var(--clay); font-size: 9px; font-weight: 700; letter-spacing: .14em; }
+.payment-plan-course .option-number { color: #d8c6a9; }
+.payment-plan h2 { margin: 25px 0 13px; font-size: clamp(1.9rem, 3vw, 2.8rem); line-height: 1.05; }
+.payment-plan-course h2 { color: var(--paper); }
+.payment-plan > p:not(.payment-price) { min-height: 48px; margin-bottom: 16px; color: var(--muted); font-size: 12px; }
+.payment-plan-course > p:not(.payment-price) { color: rgba(245, 242, 233, .75); }
+.payment-price { margin: auto 0 18px; color: var(--forest); font-family: var(--serif); font-size: 2rem; }
+.payment-plan-course .payment-price { color: var(--paper); }
+.payment-plan button { width: 100%; justify-content: space-between; cursor: pointer; }
+.payment-plan button:disabled { cursor: not-allowed; opacity: .55; }
+.payment-next-step { width: min(100% - var(--gutter) * 2, var(--page)); margin: 0 auto; padding: 54px 0 74px; }
+.payment-next-step .eyebrow { margin-bottom: 10px; }
+.payment-next-step > p:not(.eyebrow) { max-width: 620px; color: var(--muted); font-size: 13px; }
+.payment-footer { padding: 24px var(--gutter); border-top: 1px solid var(--line); text-align: center; }
+.payment-result { width: min(100% - var(--gutter) * 2, 760px); margin: 0 auto; padding: clamp(70px, 10vw, 130px) 0; }
+.payment-result h1 { font-size: clamp(2.8rem, 6vw, 5rem); }
+.payment-result-message { max-width: 640px; color: var(--muted); }
+.payment-result-summary { margin: 30px 0; border-top: 1px solid var(--line); }
+.payment-result-summary > div { display: grid; grid-template-columns: minmax(160px, .7fr) 1fr; gap: 18px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.payment-result-summary dt { color: var(--muted); font-size: 12px; }
+.payment-result-summary dd { margin: 0; color: var(--forest); font-size: 13px; font-weight: 700; overflow-wrap: anywhere; }
+.payment-result-links { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-top: 28px; }
+.payment-result-retry { margin-top: 10px; }
+@media (max-width: 850px) {
+  .payment-plans { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .payment-page .site-header { height: auto; min-height: 74px; gap: 12px; padding-block: 10px; }
+  .payment-page .brand-logo-circle { width: 48px; height: 48px; }
+  .payment-page .brand { min-width: 0; flex: 0 1 auto; }
+  .payment-page .brand-copy { min-width: 0; }
+  .payment-page .brand-name { font-size: 18px; }
+  .payment-page .brand-location { font-size: 9px; }
+  .payment-page .site-header > .text-link { font-size: 10px; }
+  .payment-plans { grid-template-columns: 1fr; }
+  .payment-plan { min-height: 280px; }
+  .payment-result-summary > div { grid-template-columns: 1fr; gap: 4px; }
+}
+@media (max-width: 370px) {
+  .payment-page .brand { gap: 7px; }
+  .payment-page .brand-logo-circle { width: 44px; height: 44px; }
+  .payment-page .brand-name { font-size: 15px; }
+  .payment-page .brand-location { font-size: 7px; }
+}

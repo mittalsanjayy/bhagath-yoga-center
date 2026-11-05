@@ -462,7 +462,8 @@ p { margin-bottom: 1rem; }
 }
 @media (max-width: 370px) {
   :root { --gutter: 18px; }
-  .brand { gap: 7px; }
+  .site-header { padding-inline: 15px; }
+  .brand { gap: 5px; }
   .brand-logo-circle { width: 44px; height: 44px; }
   .brand-name { font-size: 15px; }
   .brand-location { font-size: 7px; letter-spacing: .1em; }
